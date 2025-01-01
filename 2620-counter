@@ -1,0 +1,38 @@
+/* function createCounter(n) {
+    return function() {
+        return n++;
+    };
+}
+
+// Example usage:
+let n = 10;
+const counter = createCounter(n);
+const calls = ["call", "call", "call"];
+const output = calls.map(() => counter());
+console.log(output); // Output: [10, 11, 12]
+
+n = -2;
+const counter2 = createCounter(n);
+const calls2 = ["call", "call", "call", "call", "call"];
+const output2 = calls2.map(() => counter2());
+console.log(output2); // Output: [-2, -1, 0, 1, 2]
+*/
+
+function createCounter(n) {
+    return function() {
+        return n++;
+    };
+}
+
+// Example usage:
+let n = 10;
+const counter = createCounter(n);
+const calls = ["call", "call", "call"];
+const output = calls.map(() => counter());
+console.log(output); // Output: [10, 11, 12]
+
+n = -2;
+const counter2 = createCounter(n);
+const calls2 = ["call", "call", "call", "call", "call"];
+const output2 = calls2.map(() => counter2());
+console.log(output2); // Output: [-2, -1, 0, 1, 2]
